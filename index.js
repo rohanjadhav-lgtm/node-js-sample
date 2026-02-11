@@ -1,3 +1,10 @@
+require('elastic-apm-node').start({
+  serviceName: 'sandbox-nodejs-app',
+  serverUrl: 'http://13.60.28.212:8200',
+  environment: 'sandbox',
+  captureBody: 'all',
+  logLevel: 'info'
+});
 var express = require('express')
 var app = express()
 
